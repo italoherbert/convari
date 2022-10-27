@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/ConVari">
+  <Resource auth="Container" 
+            driverClassName="com.mysql.jdbc.Driver" 
+            maxActive="20" maxIdle="10" maxWait="-1" 
+            name="jdbc/convari" 
+            type="javax.sql.DataSource" 
+            url="jdbc:mysql://localhost:3306/convari?zeroDateTimeBehavior=convertToNull" 
+            username="convari" 
+            password="71.@Fi4"/>
+</Context>

@@ -1,0 +1,33 @@
+
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="../text-schema.xml">
+	
+	<text key="text.login.recovery">
+		Para redefinir sua senha, siga as instruções abaixo:	
+	</text>
+	
+	<text key="text.login.recovery.step1">
+		Informe um endereço de e-mail válido e clique no botão "Enviar link de redefinição de senha".			
+	</text>
+	
+	<text key="text.login.recovery.step2">
+		Verifique a caixa de entrada de mensagens correspondente ao e-mail informado.
+	</text>
+	
+	<text key="text.login.recovery.step3">
+		Visualize o e-mail com título de "Redefinição de senha"	
+	</text>
+	
+	<text key="text.login.recovery.step4">
+		Siga o link de redefinição de senha para visualizar a página de redefinição			
+	</text>
+	
+	<text key="text.login.recovery.step5">
+		Redefina sua senha e, então, poderar fazer login com a nova senha			
+	</text>
+	
+	<text key="text.warning.login.recovery">
+		O link de redefinição de senha é válido apenas por 24 horas!			
+	</text>
+	
+</content>		

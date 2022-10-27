@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<loader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="loader-schema.xml">
+
+	<component name="north" id="north" src="pages/layout/north.html" jsAfter="javascript:north_page_onload();">
+		<resources>
+			<component id="topic_simple_find" src="pages/components/topic_simple_find_form.html" 
+						jsAfter="javascript:topic_simple_find_onload();">
+				<messages>
+					<message key="label.blur.find.topic" />
+					<message key="label.button.search" id="label.button.search.topic" />
+				</messages>
+			</component>
+		</resources>
+	</component>
+	
+</loader>
+

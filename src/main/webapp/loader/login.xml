@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+
+<loader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="loader-schema.xml">
+		
+	<layout pageName="layout" />	
+	
+	<component name="login-captcha" id="login_captcha" src="pages/components/login_captcha.html">
+		<messages>	
+			<message key="label.field.captcha" />
+			<message key="label.field.captcha.enter" />
+			<message key="label.button.captcha.new" />
+		</messages>
+	</component>
+	
+	<component name="layout" id="layout" src="layout/layout2.html" jsAfter="javascript:layout_page_onload();">
+		<resources>			
+			<component id="alert_message_component" src="pages/alertmessage.html" />
+			<component jsAfter="javascript:head_page_onload();">
+				<resources>
+					<component id="lang_panel" src="pages/components/lang.html" />							
+				</resources>
+			</component>					
+			<component id="north" src="pages/layout/north.html" />		
+			<component id="south" src="pages/layout/south.html">
+				<messages>
+					<message key="label.south" />
+				</messages>
+			</component>			
+			<component id="content" src="pages/login.html" jsAfter="javascript:login_page_onload();">
+				<resources>
+					<component id="encrypter_applet" src="pages/encrypter_applet.html" />
+				</resources>				
+				<messages>
+					<message key="label.login.title" />
+					<message key="label.field.username" />
+					<message key="label.field.password" />
+					<message key="label.button.enter" />
+					<message key="label.link.recovery" />
+					<message key="label.link.register" />					
+				</messages>
+			</component>		
+		</resources>	
+	</component>
+	
+</loader>
+

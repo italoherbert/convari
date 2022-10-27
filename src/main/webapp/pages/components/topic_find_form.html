@@ -1,0 +1,46 @@
+<div id='topic_find_form_page'>
+	
+	<div style='text-align:center'>
+		<a id='topic_find_link' href='#'  
+			onclick="elementManager.showById( 'topic_find_panel', true ); elementManager.showById( 'topic_find_link', false );">
+			<span id="label.link.new.search"></span>
+		</a>
+	</div>
+	
+	<div id="topic_find_panel" class="panel find-panel" style="visibility:hidden; display:none">		
+		<div id="form_find_panel_title" class="panel-title">
+			<span id="label.search.form"></span>
+		</div>
+		<div class="form-panel">		
+			<form name="topic_find_form">
+				<div id="include_cbs" style="visibility:hidden; display:none">
+					<div class="field">
+						<input type="checkbox" name="include_description" checked="checked" onclick="javascript:elementManager.showOrHideById( 'description_key_form_div' );" />
+						<span id="label.search.include.topic.description"></span>
+					</div>
+					<div class="field">
+						<input type="checkbox" name="include_creater" onclick="javascript:elementManager.showOrHideById( 'user_name_form_div' );" />
+						<span id="label.search.include.topic.user"></span>
+					</div>
+					<br />
+				</div>
+				<div id="description_key_form_div" style="visibility:visible; display:block;">
+					<span id="label.search.for.text" class="label"></span>			
+					<br />
+					<input class="field" type="text" name="tquery" style="width:300px" />
+				</div>
+				<div id="user_name_form_div" style="visibility:hidden; display:none;">
+					<span id="label.search.for.user.name" class="label"></span>
+					<br />
+					<input class="field" type="text" name="uquery" style="width:300px" />
+				</div>
+				<div class="button-panel">	
+					<a id="topic_find_bt" class="button">
+						<span id="label.button.search"></span>
+					</a>						
+				</div>								
+			</form>
+		</div>			
+	</div>
+				
+</div>

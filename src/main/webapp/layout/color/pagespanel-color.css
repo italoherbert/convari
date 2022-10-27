@@ -1,0 +1,28 @@
+
+.pagespanel {
+	border: 1px solid #ACF;
+}
+
+.pagespanel-button-enabled {
+	background: #ACF;
+}
+
+.pagespanel-button-selected {
+	background: #69F;
+	color:#FFF;
+}
+
+.pagespanel-button-disabled {
+	background: #CCC;
+}
+
+
+.pagespanel-button-enabled:hover, .pagespanel-button-selected:hover {
+	background: #69F;
+	color:#FFF;
+}
+
+.pagespanel-button-enabled:active, .pagespanel-button-selected:hover {
+	background: #7AF;
+	color:#FFF;
+}

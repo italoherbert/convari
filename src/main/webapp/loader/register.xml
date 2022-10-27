@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+
+<loader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="loader-schema.xml">
+		
+	<layout pageName="layout" />	
+	
+	<component name="layout" id="layout" src="layout/layout2.html" jsAfter="javascript:layout_page_onload();">
+		<resources>			
+			<component id="alert_message_component" src="pages/alertmessage.html" />
+			<component jsAfter="javascript:head_page_onload();">
+				<resources>
+					<component id="lang_panel" src="pages/components/lang.html" />							
+				</resources>
+			</component>		
+			<component id="north" src="pages/layout/north.html" />
+			<component id="south" src="pages/layout/south.html">
+				<messages>
+					<message key="label.south" />
+				</messages>
+			</component>			
+			<component id="content" src="pages/register.html">
+				<resources>
+					<component id="encrypter_applet" src="pages/encrypter_applet.html" />
+				</resources>
+				<messages>
+					<message key="label.warning" id="label.warning.1" />
+					<message key="label.warning" id="label.warning.2" />
+				
+					<message key="label.warning.required" />
+					<message key="text.warning.register.mail" type="text" />
+					
+					<message key="label.register.title"/>
+					<message key="text.register" type="text" />					
+					<message key="label.register.title.generaldata" />
+					<message key="label.register.title.contactdata" />
+					<message key="label.register.title.authdata" />					
+					<message key="label.captcha.title" />	
+					
+					<message key="label.field.name" />																			
+					<message key="label.field.lastname" />																					
+					<message key="label.field.sex" />																	
+					<message key="label.sex.m" />																	
+					<message key="label.sex.f" />	
+					<message key="label.field.website" />
+																																																		
+					<message key="label.field.mail" />																			
+					<message key="label.field.mail.confirm" />																							
+					<message key="label.field.mail2" />																			
+					<message key="label.field.mail2.confirm" />																			
+					<message key="label.field.username" />																			
+					<message key="label.field.password" />																			
+					<message key="label.field.password.confirm" />																			
+					
+					<message key="label.field.captcha" />					
+					<message key="label.field.captcha.enter" />	
+					<message key="label.button.captcha.new" />			
+					
+					<message key="label.button.register" />	
+					<message key="label.link.login" />
+																																	
+				</messages>
+			</component>		
+		</resources>	
+	</component>
+	
+</loader>
+

@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1";
+
+textarea {
+	width:99%;
+	height:100px;
+}
+
+textarea.expand:hover {
+	height:200px;
+}

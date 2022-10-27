@@ -1,0 +1,39 @@
+body {
+	text-align:center;	
+	margin:auto;
+}
+
+img {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+p {	
+	line-height: 1.5;
+	text-align:justify;
+	font-family: "Times", Serif; 
+}
+
+hr {
+	height: 1px;
+}
+
+form {
+	margin:0;
+}
+
+table.table-layout {
+	border-collapse: collapse;
+	border-spacing: 0;	
+	padding:0;
+}
+
+table.table-layout td {
+	margin:0;
+	padding:0;
+}
+
+.attention-panel {
+	padding: 5px 10px;
+}

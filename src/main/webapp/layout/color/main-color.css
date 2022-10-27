@@ -1,0 +1,54 @@
+
+body {
+	background-color:#FFF;
+}
+
+p {		
+	color:#000;
+}
+
+p.right-align {
+	color:#000;
+}
+
+p.center1 {
+	color:#000;
+}
+
+ul {
+	color:#000;
+}
+
+fieldset {
+	border: 1px solid #000;
+}
+
+fieldset legend {
+	color:#000;
+}
+
+hr {
+	border: none;
+	background: #ACF;
+}
+
+.success-msg, .info-msg {
+	color: #36F;	
+}
+
+.error-msg {
+	color: #F63;
+}
+
+.required-simbol {
+	color:#F30;
+}
+
+.attention-panel {
+	background: #FCFCFF;
+	border: 1px solid #FA0;
+}
+
+.attention-msg {
+	color: #FA0;
+}

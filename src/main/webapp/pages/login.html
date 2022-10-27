@@ -1,0 +1,26 @@
+<div id="login_page" class="panel">		
+	<div id="label.login.title" class="panel-title"></div>
+	<div class="form-panel">
+		<form name="login_form">												
+			<span id="label.field.username" class="label"></span>
+			<br />
+			<input class="field" type="text" name="username" value="" maxlength="100" />
+			<br />	
+			<span id="label.field.password" class="label"></span>
+			<br />
+			<input class="field" type="password" name="password" value="" maxlength="100" />			
+			<span id="login_captcha"></span>
+			
+			<div class="button-panel">
+				<span id="label.button.enter" class="button" onclick="javascript:login.login();"></span>
+			</div>
+			<span class="error-msg" id="login_error_msg"></span>
+			<span class="info-msg" id="login_info_msg"></span>
+		</form>
+		<a id="label.link.recovery" href="#" onclick="javascript:urlutil.meshParamsAndRedirect( LOGIN_RECOVERY_PAGE_FILE );"></a>
+		<br />
+		<a id="label.link.register" href="#" onclick="javascript:urlutil.meshParamsAndRedirect( REGISTER_PAGE_FILE );"></a>
+		<br />
+		<span id="encrypter_applet"></span>
+	</div>		
+</div>

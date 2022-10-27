@@ -1,0 +1,20 @@
+<div id="comment_page" class="panel">
+	<div id="label.page.title.comment" class="title"></div>
+	<div style="padding:10px">
+		<span id="text.create.comment"></span>
+		<br />
+		<br />
+		<form name="comment_form">
+			<span class="label">
+				<span id="comment_characteres_length">0</span>
+				<span id="label.remainder.characters"></span> 		
+			</span>			
+			<textarea class="expand" name="message"></textarea>				
+			<div class="button-panel">
+				<a id="label.button.send" class="button" onclick="javascript:comment.addComment();"></a>				
+			</div>
+			<span class="error-msg" id="add_comment_error_msg"></span>
+			<span class="info-msg" id="add_comment_info_msg"></span>
+		</form>
+	</div>
+</div>					

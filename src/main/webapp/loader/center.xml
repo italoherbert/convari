@@ -1,0 +1,284 @@
+<?xml version="1.0" ?>
+
+<loader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="loader-schema.xml">
+				
+	<component name="home" id="content" src="pages/center/home.html" jsAfter="javascript:home_page_onload();">
+		<resources>
+			<component ref="topic-find" />
+		</resources>
+	</component>
+	
+	<component name="presentation" id="content" src="pages/center/presentation.html" jsAfter="javascript:presentation_page_onload();">
+		<messages>
+			<message key="label.page.title.presentation"/>
+			<message key="html.presentation" type="html" /> 
+		</messages>	
+	</component>
+	
+	<component name="security-aspects" id="content" src="pages/center/security_aspects.html" jsAfter="javascript:security_aspects_page_onload();">
+		<messages>
+			<message key="label.page.title.security.aspects"/>
+			<message key="html.security.aspects" type="html" /> 
+		</messages>	
+	</component>
+		
+	<component name="user-find" id="content" src="pages/center/user_find.html">
+		<resources>
+			<component id="find_form" src="pages/components/user_find_form.html" assync="false">
+				<resources>
+					<component jsAfter="javascript:user_find_form_onload();" />
+				</resources>
+				<messages>
+					<message key="label.link.new.search" />
+					<message key="label.search.form" />
+										
+					<message key="label.search.for.user.name" />
+					
+					<message key="label.button.search" />
+				</messages>
+			</component>
+			<component jsAfter="javascript:user_find_page_onload();" />			
+		</resources>
+		<messages>
+			<message key="label.page.title.find.user" />
+		</messages>
+	</component>
+	
+	<component name="topic-find" id="content" src="pages/center/topic_find.html">
+		<resources>			
+			<component id="find_form" src="pages/components/topic_find_form.html" assync="false">
+				<resources>
+					<component jsAfter="javascript:topic_find_form_include_cbs_visible();">
+						<dependences visibility="owner contact user" />												
+					</component>
+					<component jsAfter="javascript:topic_find_form_onload();" />
+				</resources>
+				<messages>
+					<message key="label.link.new.search" />
+					<message key="label.search.form" />
+					
+					<message key="label.search.include.topic.description" />
+					<message key="label.search.include.topic.user" />
+					
+					<message key="label.search.for.text" />
+					<message key="label.search.for.user.name" />
+					
+					<message key="label.button.search" />
+				</messages>
+			</component>
+			<component jsAfter="javascript:topic_find_page_onload();" />														
+		</resources> 
+		<messages>
+			<message key="label.page.title.find.topic" />
+		</messages>
+	</component>
+						
+	<component name="topics" id="content" src="pages/center/topics.html" jsAfter="javascript:topics_page_onload()">	
+		<dependences visibility="owner contact user" />
+		<resources>
+			<component assync="false">
+				<resources>
+					<component id="find_form" src="pages/components/topic_find_form.html" assync="false">
+						<resources>
+							<component jsAfter="javascript:user_topic_find_form_onload();" />						
+						</resources>
+					</component>
+				</resources>
+			</component>		
+		</resources>		
+	</component>
+	
+	<component name="posts" id="content" src="pages/center/posts.html" jsAfter="javascript:posts_page_onload();">
+		<dependences visibility="owner contact user">
+			<operation name="get-posts-count" />
+		</dependences>
+	</component>
+	
+	<component name="topic" id="content" src="pages/center/topic.html" jsAfter="javascript:topic_page_onload();">
+		<dependences>
+			<operation name="get-topic" />
+			<operation name="get-posts" />		
+		</dependences>
+		<resources>
+			<component id="add_new_post" src="pages/components/add_new_post.html" jsAfter="javascript:add_post_page_onload();">
+				<dependences visibility="owner">
+					<operation name="add-post" />
+				</dependences>
+				<messages>
+					<message key="label.post.create.title" />
+					<message key="text.create.post" type="text" />
+					
+					<message key="label.warning" />
+					<message key="text.warning.create.post" type="text" />
+					
+					<message key="label.remainder.characters" />
+					<message key="label.button.send" />					
+				</messages>
+			</component>
+		</resources>
+		<messages>
+			<message key="label.button.refresh" />
+			<message key="label.checkbox.auto.refresh" />
+			<message key="label.checkbox.auto.scroll" />
+		</messages>
+	</component>
+	
+	<component name="profile" id="content" src="pages/center/profile.html" jsAfter="javascript:profile_page_onload();">
+		<resources>
+			<component id="edit_profile_button" src="pages/components/edit_profile_button.html">
+				<dependences visibility="owner">
+					<operation name="save-general-data" />
+					<operation name="save-contact-data" />
+					<operation name="save-professional-data" />
+				</dependences>
+				<messages>
+					<message key="label.button.edit" />
+				</messages>
+			</component>
+		</resources>
+		<messages>
+			<message key="label.page.title.profile" />						
+			<message key="label.profile.title.generaldata" />					
+			<message key="label.profile.title.contactdata" />			
+			<message key="label.profile.title.professionaldata" />			
+		</messages>
+	</component>
+	
+	<component name="edit-profile" id="content" src="pages/center/edit_profile.html" jsAfter="javascript:edit_profile_page_onload();">
+		<dependences visibility="owner">		
+			<operation name="save-general-data" />
+			<operation name="save-contact-data" />
+			<operation name="save-professional-data" />
+		</dependences>				
+		<messages>
+			<message key="label.page.title.profile" />									
+		
+			<message key="label.warning" />			
+			<message key="text.warning.required.field" type="text" />
+						
+			<message key="label.profile.panel.title.setimage" />			
+			<message key="label.profile.title.generaldata" />			
+			<message key="label.profile.title.contactdata" />			
+			<message key="label.profile.title.professionaldata" />
+						
+			<message key="label.field.name" />			
+			<message key="label.field.lastname" />			
+			<message key="label.field.sex" />			
+			<message key="label.field.website" />			
+			
+			<message key="label.sex.m" />
+			<message key="label.sex.f" />
+			
+			<message key="label.field.ender" />		
+			<message key="label.field.city" />		
+			<message key="label.field.state" />		
+			<message key="label.field.country" />		
+				
+			<message key="label.field.tel" />			
+			<message key="label.field.tel2" />		
+			<message key="label.field.mail" />			
+			<message key="label.field.mail.confirm" />			
+			<message key="label.field.mail2" />			
+			<message key="label.field.mail2.confirm" />	
+					
+			<message key="label.field.occupation" />			
+			<message key="label.field.academic" />			
+					
+			<message key="label.button.save" id="label.button.save.1" />			
+			<message key="label.button.save" id="label.button.save.2" />						
+			<message key="label.button.save" id="label.button.save.3" />			
+			
+			<message key="label.link.profile" id="label.link.profile.1" />
+			<message key="label.link.profile" id="label.link.profile.2" />
+		</messages>
+	</component>
+	
+	<component name="notifications" id="content" src="pages/center/notifications.html" jsAfter="javascript:notifications_page_onload();">
+		<dependences visibility="owner">
+			<operation name="get-notifications" />
+		</dependences>
+		<messages>
+			<message key="label.page.title.notifications" />
+		</messages>		
+	</component>
+	
+	<component name="comment" id="content" src="pages/center/comment.html" jsAfter="javascript:comment_page_onload();">
+		<dependences visibility="owner">
+			<operation name="add-comment" />
+		</dependences>		
+		<messages>
+			<message key="label.page.title.comment" />
+			<message key="text.create.comment" type="text" />
+			<message key="label.remainder.characters" />
+			<message key="label.button.send" />
+		</messages>
+	</component>
+	
+	<component name="invitations" id="content" src="pages/center/invitations.html" jsAfter="javascript:invitations_page_onload();">
+		<dependences visibility="owner">
+			<operation name="get-invitations" />		
+		</dependences>
+		<messages>
+			<message key="label.page.title.pending.invitations" />
+		</messages>
+	</component>
+	
+	<component name="configurations" id="content" src="pages/center/configurations.html" jsAfter="javascript:configurations_page_onload();">
+		<dependences visibility="owner" />
+		<messages>
+			<message key="label.page.title.configurations" />
+			<message key="label.configurations.access.data.title" />
+			<message key="label.field.visibility.ender" />
+			<message key="label.field.visibility.tel" />
+			<message key="label.field.visibility.mail" />		
+			<message key="label.button.save" />
+			
+			<message key="label.visibility.owner" id="label.visibility.owner.ender" />
+			<message key="label.visibility.contact" id="label.visibility.contact.ender" />
+			<message key="label.visibility.user" id="label.visibility.user.ender" />
+			<message key="label.visibility.public" id="label.visibility.public.ender" />
+			
+			<message key="label.visibility.owner" id="label.visibility.owner.tel" />
+			<message key="label.visibility.contact" id="label.visibility.contact.tel" />
+			<message key="label.visibility.user" id="label.visibility.user.tel" />
+			<message key="label.visibility.public" id="label.visibility.public.tel" />
+			
+			<message key="label.visibility.owner" id="label.visibility.owner.mail" />
+			<message key="label.visibility.contact" id="label.visibility.contact.mail" />
+			<message key="label.visibility.user" id="label.visibility.user.mail" />
+			<message key="label.visibility.public" id="label.visibility.public.mail" />
+		</messages>
+	</component>
+	
+	<component name="create-topic" id="content" src="pages/center/create_topic.html">
+		<dependences visibility="owner">
+			<operation name="add-topic" />			
+		</dependences>
+		<resources>
+			<component name="add-new-topic" id="add_new_topic" src="pages/components/add_new_topic.html" jsAfter="javascript:add_topic_page_onload();">
+				<messages>
+					<message key="text.create.topic" type="text" />
+					
+					<message key="label.warning" />						
+					<message key="text.warning.create.topic" type="text" />
+
+					<message key="label.visible.to" />			
+					<message key="label.visibility.owner" />
+					<message key="label.visibility.contact" />
+					<message key="label.visibility.user" />
+					<message key="label.visibility.public" />					
+										
+					<message key="label.remainder.characters" />
+					<message key="label.button.create" />	
+					
+				</messages>
+			</component>
+		</resources>		
+		<messages>
+			<message key="label.page.title.create.topic" />
+		</messages>
+	</component>								
+		
+</loader>
+

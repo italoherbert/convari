@@ -1,0 +1,33 @@
+
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="../text-schema.xml">
+
+	<text key="text.warning.required.field">		
+		Required fields are marked with
+	</text>
+
+	<text key="text.warning.create.topic">
+		After sended and processed the topic, you not will can remove directly. Therefore, is advisable
+		that you review the content before of send! 				
+	</text>
+	
+	<text key="text.warning.create.post">
+		After sended and processed the post, you not will can remove directly. Therefore, is advisable
+		that you review the content before of send!
+	</text>
+			
+	<text key="text.create.topic">
+		Write here a topic for discussion that can be, for example:
+		question, doubt, subject of your interest, etc... 	
+	</text>
+	
+	<text key="text.create.post">
+		Write here a message of agree with the edited topic
+	</text>
+
+	<text key="text.create.comment">
+		Write here a comment, improvement suggestion, ..., etc.
+		After sended, the comment will be stored by system and read as soon as possible!
+	</text>
+
+</content>		

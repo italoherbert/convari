@@ -1,0 +1,17 @@
+
+.title {
+	margin:0;
+	padding:2px 10px;
+	
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.subtitle {
+	margin:0;
+	padding:3px 5px 0 6px;
+}
+
+.subtitle-simple {
+	
+}

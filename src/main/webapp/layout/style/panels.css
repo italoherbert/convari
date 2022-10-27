@@ -1,0 +1,24 @@
+
+.panel {
+	padding:2px;
+}
+
+.panel-title {
+	margin:0; 
+	padding:1px 5px;
+	
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.panel-content {
+	padding:3px 5px;
+}
+
+.panel-title-text {
+	
+}
+
+.panel-title-date {
+	margin-left: 50px;
+}

@@ -1,0 +1,15 @@
+
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="../text-schema.xml">
+	
+	<text key="text.register">
+		Fill the follow form and, after registration confirmed, you can make login in system and have 
+		registered user privileges.	
+	</text>
+		
+	<text key="text.warning.register.mail">
+		E-Mail typed will be used in case of password recovery need. 
+		Therefore, is important enter with an valid e-mail.
+	</text>
+
+</content>		

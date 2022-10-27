@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+
+div#register_page {
+	position:relative;	
+	margin:0 auto;
+	max-width: 1000px;	
+}
+
+div#register_form_panel {
+	position:relative;	
+	margin:0 auto;
+	width: 600px;
+}
+
+div#register_page .field {
+	width: 95%;
+}
+
+div#register_page .form-panel .attention-panel {
+	width: 92%; 
+}
+
+div#register_page .button-panel {
+	width: 100%; 
+	text-align: left;
+}
+
+div#register_page .form-panel {
+	padding: 10px 50px;		
+}

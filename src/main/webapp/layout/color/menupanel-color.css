@@ -1,0 +1,29 @@
+@CHARSET "ISO-8859-1";
+
+.menupanel {
+	
+}
+
+.menupanel-item {
+	
+}
+
+.menupanel-item:hover {
+	color:#f6f6ff;
+	background: #ACF;
+}
+
+.menupanel-item:active {
+	color:#333;
+	background: #CDF;
+}
+
+.menupanel-item-selected {
+	color:#333;
+	background: #DEF;
+}
+
+.menupanel-item-mark-1 {
+	color:#000;
+	background: #ffCC66;
+}

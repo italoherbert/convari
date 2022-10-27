@@ -1,0 +1,33 @@
+
+div#leftpanel_page .panel, div#rightpanel_page .panel {
+	border: none;
+	border-top: 1px solid #ACF;
+	border-bottom: 1px solid #ACF;
+	background: #FFF;
+}
+
+div#profile_page .subtitle {
+	font-weight: bold;
+}
+
+div#profile_page .field {
+	font-weight: bold;
+}
+
+div#profile_page .fieldvalue {
+	font-style: italic;
+}
+
+div#edit_profile_page input[type=text], div#edit_profile_page .button-panel {
+	width: 500px; 
+}
+
+.find-panel {
+	position:relative; 
+	margin:auto; 
+	width:500px;
+}
+
+.form-panel {
+	padding: 20px 45px;		
+}

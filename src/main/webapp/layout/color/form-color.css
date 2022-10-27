@@ -1,0 +1,43 @@
+@CHARSET "ISO-8859-1";
+
+input[type=text], input[type=password], textarea {
+	border:1px solid #ACF;
+}
+
+input[type=checkbox] {
+	
+}
+
+.label {
+	
+}
+
+.button {
+	color:#FFF;
+	background: #69F;	
+	border: 1px solid #FFF;
+}
+
+.button:hover {
+	color:#FFF;
+	background: #CCDFFF;
+	border: 1px solid #EEE;
+}
+
+.button:active {
+	color:#FFF;
+	background: #EEEFFF;
+	border: 1px solid #DDD;
+}
+
+.button .icon {
+	
+}
+
+.button .text {
+	
+}
+
+a.button:hover {
+	text-decoration: none;	
+}

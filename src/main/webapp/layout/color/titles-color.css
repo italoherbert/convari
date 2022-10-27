@@ -1,0 +1,15 @@
+
+.title {
+	background: #69F;
+	border:1px solid #ACF;
+	color:#FFF;
+}
+
+.subtitle {
+	color: #000;
+	border-bottom:1px solid #ACF;
+}
+
+.subtitle-simple {
+	border-bottom:1px solid #000;
+}

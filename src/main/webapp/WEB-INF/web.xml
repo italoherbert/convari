@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<display-name>ConVari</display-name>
+	
+	<resource-ref>
+		<res-ref-name>jdbc/convari</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+	
+	<listener>
+		<listener-class>convari.controller.HandleLifecycle</listener-class>		
+	</listener>
+		
+	<servlet>
+		<description>Servlet invocador de Operações</description>
+		<display-name>InvokerServlet</display-name>
+		<servlet-name>InvokerServlet</servlet-name>
+		<servlet-class>convari.controller.InvokerServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>InvokerServlet</servlet-name>
+		<url-pattern>/servlet/InvokerServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description>Servlet invocador de Operações</description>
+		<display-name>ImageUploadServlet</display-name>
+		<servlet-name>ImageUploadServlet</servlet-name>
+		<servlet-class>convari.controller.ImageUploadServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>ImageUploadServlet</servlet-name>
+		<url-pattern>/servlet/ImageUploadServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description>Servlet gerador de captcha</description>
+		<display-name>CaptchaServlet</display-name>
+		<servlet-name>CaptchaServlet</servlet-name>
+		<servlet-class>convari.controller.CaptchaServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>CaptchaServlet</servlet-name>
+		<url-pattern>/servlet/CaptchaServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description>Servlet para teste de disponibilidade do servidor</description>
+		<display-name>TestServlet</display-name>
+		<servlet-name>TestServlet</servlet-name>
+		<servlet-class>convari.controller.TestServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>TestServlet</servlet-name>
+		<url-pattern>/servlet/TestServlet</url-pattern>
+	</servlet-mapping>
+
+	<session-config>
+		<session-timeout>30</session-timeout> 
+	</session-config>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

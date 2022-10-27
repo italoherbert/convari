@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<loader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="loader-schema.xml">
+
+<component name="right-panel" id="rightpanel" src="pages/layout/rightpanel.html" jsAfter="javascript:rightpanel_page_onload();">
+	<dependences visibility="owner contact user" />
+	<resources>
+		<component ref="contacts-panel" />	
+	</resources>
+</component>
+
+<component name="contacts-panel" id="contacts_panel" src="pages/components/contacts_panel.html">
+	<dependences visibility="owner contact user" />
+	<messages>
+		<message key="label.contactspanel.title" />
+	</messages>
+</component>
+
+</loader>
+

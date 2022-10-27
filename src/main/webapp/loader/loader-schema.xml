@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="visibilityType">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="public" />
+		<xs:enumeration value="user" />
+		<xs:enumeration value="contact" />
+		<xs:enumeration value="owner" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="messageType">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="label" />
+		<xs:enumeration value="text" />
+		<xs:enumeration value="html" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:attribute name="visibility" default="public user contact owner">
+	<xs:simpleType>
+		<xs:list itemType="visibilityType" />		
+	</xs:simpleType>
+</xs:attribute>
+
+<xs:element name="dependences">
+	<xs:complexType>
+		<xs:sequence>			
+			<xs:element name="operation" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="name" type="xs:string" use="required" />
+				</xs:complexType>
+			</xs:element>			
+		</xs:sequence>
+		<xs:attribute ref="visibility" use="optional" />
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="resources">
+	<xs:complexType>
+		<xs:sequence>		
+			<xs:element ref="component" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="messages">
+	<xs:complexType>
+		<xs:sequence>		
+			<xs:element name="message" minOccurs="1" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="key" type="xs:string" use="required" />
+					<xs:attribute name="id" type="xs:string" use="optional" />
+					<xs:attribute name="type" default="label">
+						<xs:simpleType>
+							<xs:list itemType="messageType" />		
+						</xs:simpleType>
+					</xs:attribute>										
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+
+
+<xs:element name="component">
+	<xs:complexType>		
+		<xs:sequence>
+			<xs:element ref="dependences" minOccurs="0" maxOccurs="1" />
+			<xs:element ref="resources" minOccurs="0" maxOccurs="1" />
+			<xs:element ref="messages" minOccurs="0" maxOccurs="1" />
+		</xs:sequence>
+		<xs:attribute name="ref" type="xs:string" use="optional" />
+		<xs:attribute name="name" type="xs:string" use="optional" />
+		<xs:attribute name="id" type="xs:string" use="optional" />
+		<xs:attribute name="src" type="xs:string" use="optional" />
+		<xs:attribute name="assync" type="xs:boolean" use="optional" default="true" />
+		<xs:attribute name="jsAfter" type="xs:string" use="optional" />
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="loader">
+
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="layout" minOccurs="0" maxOccurs="1">
+				<xs:complexType>
+					<xs:attribute name="pageName" type="xs:string" use="required" />
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="file" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="path" type="xs:string" use="required" />
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="component" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+	
+</xs:schema>

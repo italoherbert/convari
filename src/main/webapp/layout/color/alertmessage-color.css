@@ -1,0 +1,12 @@
+div#bg_alert_message_div {
+	background: #000;
+	opacity:0.1;
+	-moz-opacity:0.1;
+	filter: alpha( opacity=10 );
+}
+
+div#alert_message_panel {
+	border: 5px solid #ACF;
+	background: #FFF;
+	color: #58F;
+}

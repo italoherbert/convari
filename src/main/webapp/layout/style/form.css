@@ -1,0 +1,36 @@
+@CHARSET "ISO-8859-1";
+
+input[type=text], input[type=password], textarea {
+	padding:2px;
+	font-size: 14px;	
+}
+
+input[type=text], input[type=password] {
+	height:20px;
+}
+
+.label {
+	font-weight: bold;
+}
+
+
+.label, .field, .button-panel {
+	margin: 5px 0;
+}
+
+.button {
+	padding:2px 6px; 
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.button .icon {
+	position:relative;
+	top:6px;
+	width:24px;
+	height:24px;
+}
+
+.button .text {
+	font-weight: bold;
+}

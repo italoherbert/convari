@@ -1,0 +1,49 @@
+﻿<div id="user_configurations_page">
+	<div id="label.page.title.configurations" class="title"></div>
+
+	<span class="info-msg" id="user_configurations_info_msg"></span>
+	<span class="error-msg" id="user_configurations_error_msg"></span>				
+	<br />
+	
+	<form name="user_config_form">
+	
+		<div class="panel">
+			<div id="label.configurations.access.data.title" class="panel-title"></div>
+			<div class="form-panel">					
+				<div class="label">
+					<span id="label.field.visibility.ender"></span>
+					<select name="ender_visibility_cb">
+						<option id="label.visibility.owner.ender" value=1 selected="selected"></option>
+						<option id="label.visibility.contact.ender" value=2></option>
+						<option id="label.visibility.user.ender" value=3></option>
+						<option id="label.visibility.public.ender" value=4></option>																
+					</select>					
+				</div>
+				<div class="label">
+					<span id="label.field.visibility.tel"></span>
+					<select name="tel_visibility_cb">
+						<option id="label.visibility.owner.tel" value=1 selected="selected"></option>
+						<option id="label.visibility.contact.tel" value=2></option>
+						<option id="label.visibility.user.tel" value=3></option>
+						<option id="label.visibility.public.tel" value=4></option>										
+					</select>					
+				</div>
+				<div class="label">
+					<span id="label.field.visibility.mail"></span>
+					<select name="mail_visibility_cb">
+						<option id="label.visibility.owner.mail" value=1 selected="selected"></option>
+						<option id="label.visibility.contact.mail" value=2></option>
+						<option id="label.visibility.user.mail" value=3></option>
+						<option id="label.visibility.public.mail" value=4></option>										
+					</select>					
+				</div>							
+				<div class="button-panel">
+					<a id="label.button.save" class="button" onclick="javascript:userConfig.saveDataUserConfig();"></a>				
+				</div>
+				<span class="error-msg" id="save_data_user_config_error_msg"></span>
+				<span class="info-msg" id="save_data_user_config_info_msg"></span>
+			</div>	
+		</div>		
+		
+	</form>
+</div>

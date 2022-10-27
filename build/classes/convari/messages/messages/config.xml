@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="config-schema.xml">
+	
+	<langs default="pt-BR">
+		<lang name="pt-BR" locale="pt_BR" />
+		<lang name="en" locale="en" />
+	</langs>		 
+		 
+	<messageFiles basedir="messages/{lang}/">	
+		<messageFile path="messages.properties" type="properties" />																							
+		<messageFile path="text.xml" type="text" />				
+		<messageFile path="htmlmap.properties" type="htmlmap" />																																				
+	</messageFiles>	 
+	
+</config>

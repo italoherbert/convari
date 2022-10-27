@@ -1,0 +1,22 @@
+@CHARSET "ISO-8859-1";
+
+.statuspanel:hover {
+	
+}
+
+.statuspanel-sub {
+	background: #f6f6ff;
+	border: 1px solid #ACF;	
+}
+
+.statuspanel-sub .statuspanel-option .statuspanel-option-label:hover {
+	color: #F30;
+}
+
+.statuspanel-sub .statuspanel-option .statuspanel-option-label:active {
+	color: #ACF;
+}
+
+.statuspanel-sub .statuspanel-option .statuspanel-option-selected {
+	color: #FA7;
+}

@@ -1,0 +1,12 @@
+@CHARSET "ISO-8859-1";
+
+.post-panel-content, .post-panel-content-topic {
+	min-height:100px;
+	text-align: justify;
+}
+
+.post-panel-img, .post-panel-topic-img {
+	float:left; 
+	margin-right:10px;	
+	width: 80px;
+}

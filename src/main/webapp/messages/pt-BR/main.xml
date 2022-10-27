@@ -1,0 +1,33 @@
+
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="../text-schema.xml">
+
+	<text key="text.warning.required.field">
+		Campos de preenchimento obrigatório estão marcados com 		
+	</text>
+
+	<text key="text.warning.create.topic">
+		Depois de enviado e processado o tópico, você não poderá removê-lo diretamente. Por isso, é aconselhável 
+		que você revise o conteúdo antes do envio!    				
+	</text>
+	
+	<text key="text.warning.create.post">
+		Depois de enviada e processada a postagem, você não poderá removê-la diretamente. Por isso, é aconselhável 
+		que você revise o conteúdo antes do envio!
+	</text>
+			
+	<text key="text.create.topic">
+		Escreva aqui um tópico (ou tema) para discussão que pode ser, por exemplo: 
+		pergunta, dúvida, assunto de seu interesse, etc...			
+	</text>
+	
+	<text key="text.create.post">
+		Escreva aqui uma mensagem de acordo com o tópico editado
+	</text>
+
+	<text key="text.create.comment">
+		Escreva aqui um comentário, opinião, crítica, sugestão de melhoramento, etc...
+		Depois de enviado, o comentário será armazenado pelo sistema e lido assim que possível!	
+	</text>
+
+</content>		

@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+
+.menupanel {
+	
+}
+
+.menupanel-item {
+	margin: 1px 0;
+	padding: 4px 5px;	
+	font-size: 13px;
+	cursor:pointer;
+}
+
+.menupanel-item-selected {
+	
+}

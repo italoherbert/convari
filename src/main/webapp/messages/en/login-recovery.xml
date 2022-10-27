@@ -1,0 +1,34 @@
+
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="../text-schema.xml">
+	
+	<text key="text.login.recovery">
+		For recovery your login, folow the steps below;
+	</text>
+	
+	<text key="text.login.recovery.step1">
+		Enter with valid e-mail and click in button "Send link for password redefinition"
+	</text>
+	
+	<text key="text.login.recovery.step2">
+		Check the inbox of email informed.
+	</text>
+	
+	<text key="text.login.recovery.step3">
+		Open the e-mail with "password redefinition" subject	
+	</text>
+	
+	<text key="text.login.recovery.step4">
+		Follow the password redefinition link for access the redefinition page.
+	</text>
+	
+	<text key="text.login.recovery.step5">
+		After password redefinition, your will make login with your new password.
+	</text>
+	
+	<text key="text.warning.login.recovery">
+		The redefinition password link will are valid only for 24 hours!
+	</text>
+		
+
+</content>		

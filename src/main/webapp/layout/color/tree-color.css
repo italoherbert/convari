@@ -1,0 +1,22 @@
+
+.tree {
+	background: #FFF;
+	border: 1px solid #ACF;
+}
+
+.tree-menu-title {	
+	border-bottom: 1px solid #ACF;
+}
+
+.tree-menu-title, .tree-item, .tree-item-notselected {
+	color: #333;
+}
+
+.tree-menu-title:hover , .tree-item:hover, .tree-item-selected {
+	background: #ACF;
+	color: #FFF;
+}
+
+.tree-item-notselected {
+	background: none;
+}

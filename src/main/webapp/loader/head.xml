@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+
+<loader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="loader-schema.xml">
+	
+	<component name="head" jsAfter="javascript:head_page_onload();">
+		<resources>
+			<component id="user_simple_find" src="pages/components/user_simple_find_form.html" 
+					jsAfter="javascript:user_simple_find_onload();">
+				<dependences visibility="owner contact user" />	
+				<messages>
+					<message key="label.blur.find.user" />
+					<message key="label.button.search" id="label.button.search.user" />
+				</messages>			
+			</component>
+		
+			<component id="lang_panel" src="pages/components/lang.html" />
+		
+			<component jsAfter="javascript:unlogged_head_page_onload();">
+				<dependences visibility="public" />
+			</component>
+						
+			<component jsAfter="javascript:logged_head_page_onload();">
+				<dependences visibility="owner contact user" />
+			</component>
+		</resources>
+	</component>
+			
+</loader>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="messageFileType">
+	<xs:restriction base="xs:string">
+		<xs:enumeration value="properties" />
+		<xs:enumeration value="text" />
+		<xs:enumeration value="htmlmap" />
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:element name="langs">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="lang" minOccurs="1" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="name" type="xs:string" use="required" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="default" type="xs:string" use="required" />
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="messageFile">
+	<xs:complexType>		
+		<xs:attribute name="path" type="xs:string" use="required" />
+		<xs:attribute name="type" use="required">
+			<xs:simpleType>
+				<xs:list itemType="messageFileType" />		
+			</xs:simpleType>
+		</xs:attribute>	
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="messageFiles">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="messageFile" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attribute name="basedir" type="xs:string" use="optional" />
+		<xs:attribute name="htmlBasedir" type="xs:string" use="optional" />	
+		<xs:attribute name="context" type="xs:string" use="optional" />
+		<xs:attribute name="extends" type="xs:string" use="optional" />
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="messages">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="langs" minOccurs="1" maxOccurs="1" />
+			<xs:element ref="messageFiles" minOccurs="1" maxOccurs="unbounded"/>			
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+	
+</xs:schema>

@@ -1,0 +1,21 @@
+<div id="topic_page">
+	<span id="topic"></span>	
+
+	<br />				
+	<div id="posts_div">
+		<span class="info-msg" id="topic_info_msg"></span>
+		<span class="error-msg" id="topic_error_msg"></span>
+		<span id="posts"></span>					
+		<span id="new_post"></span>
+	</div>
+			
+	<form>
+		<a id="label.button.refresh" class="button" onclick="javascript:post.refreshTopic();"></a>												
+		<input type="checkbox" name="auto_refresh" onclick="javascript:post.autoRefreshOnclick( this );" />
+		<label id="label.checkbox.auto.refresh" for="auto_refresh"></label>				
+		<input type="checkbox" name="auto_scroll" onclick="javascript:post.autoScroll=this.checked" checked="checked" />
+		<label id="label.checkbox.auto.scroll" for="auto_scroll"></label>										
+	</form>	
+	<br />	
+	<span id="add_new_post"></span>
+</div>

@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+
+.statuspanel, .status-option-notalter {
+	position:relative;
+	padding: 2px 0;
+}
+
+.statuspanel {
+	cursor: pointer;
+}
+
+.statuspanel-sub {
+	position:absolute;
+	padding:2px;
+	top:0;
+	left:150px;
+	width: 150px;
+	z-index: 1000;						
+}
+
+.statuspanel-option, .statuspanel-option-notalter {	
+	text-align: left;
+	padding: 2px 0;
+}
+
+.statuspanel-option {
+	cursor:pointer;
+}
+
+.statuspanel-option-icon {
+	position:relative;
+	margin-right: 5px;
+	top: 3px;
+	left: 3px;
+}
+
+.statuspanel-alterpermitted-icon {	
+	position: absolute;
+	top:5px;
+	right:3px;	
+	float:right;
+}
+
+.statuspanel-option-icon, .statuspanel-alterpermitted-icon {		
+	width: 16px;
+	height: 16px;
+}

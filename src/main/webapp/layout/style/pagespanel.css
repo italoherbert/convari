@@ -1,0 +1,18 @@
+
+.pagespanel {
+	padding: 4px 1px;
+}
+
+.pagespanel-button {
+	margin:1px;
+	padding: 2px 10px;
+	cursor: pointer;	
+}
+
+.pagespanel-button-enabled {
+	
+}
+
+.pagespanel-button-disabled {
+	cursor: default;
+}

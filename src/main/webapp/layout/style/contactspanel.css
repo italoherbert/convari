@@ -1,0 +1,25 @@
+@CHARSET "ISO-8859-1";
+
+.contacts-panel-content {
+	width:150px; 
+	height: 300px; 
+	overflow: auto;
+}
+
+.contacts-panel-item {
+	width:auto;
+	min-height:30px;
+	margin: 2px 0;
+	cursor: pointer;	
+}
+
+.contacts-panel-item-image {
+	width:25px;
+	height:25px;
+	margin:2px;
+}
+
+.contacts-panel-item-text {	
+	white-space: nowrap;
+}
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<messages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="config-schema.xml">
+	
+	<langs default="pt-BR">
+		<lang name="pt-BR" />
+		<lang name="en" />
+	</langs>		 
+		 
+	<messageFiles context="global" basedir="messages/{lang}/" htmlBasedir="pages/lang/{lang}/">
+		<messageFile path="messages.properties" type="properties" />
+		
+		<messageFile path="labels.properties" type="properties" />
+		<messageFile path="fields.properties" type="properties" />
+		<messageFile path="buttons.properties" type="properties" />	
+		<messageFile path="links.properties" type="properties" />
+	</messageFiles>	 
+		 
+	<messageFiles context="main" extends="global">																
+		<messageFile path="main.properties" type="properties" />				
+		<messageFile path="main.xml" type="text" />		
+		<messageFile path="htmlmap.properties" type="htmlmap" /> 																
+	</messageFiles>	 
+	
+	<messageFiles context="register" extends="global">												
+		<messageFile path="register.properties" type="properties" />
+		<messageFile path="register.xml" type="text" />																
+	</messageFiles>
+	
+	<messageFiles context="login" extends="global">											
+		<messageFile path="login.properties" type="properties" />																
+	</messageFiles>
+	
+	<messageFiles context="login-recovery" extends="global">												
+		<messageFile path="login-recovery.properties" type="properties" />
+		<messageFile path="login-recovery.xml" type="text" />																		
+	</messageFiles>
+	
+	<messageFiles context="password-redefinition" extends="global">												
+		<messageFile path="password-redefinition.properties" type="properties" />
+		<messageFile path="password-redefinition.xml" type="text" />																		
+	</messageFiles>		
+	
+</messages>

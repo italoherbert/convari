@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+
+<loader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="loader-schema.xml">
+
+	<layout pageName="layout" />	
+	<file path="loader/head.xml" />
+	<file path="loader/north.xml" />
+	<file path="loader/top.xml" />
+	<file path="loader/leftpanel.xml" />
+	<file path="loader/rightpanel.xml" />	
+	<file path="loader/center.xml" />	
+	
+	<component name="load-content-page" jsAfter="javascript:content_page_onload();" />
+
+	<component name="layout" id="layout" src="layout/layout.html" jsAfter="javascript:layout_page_onload();">
+		<resources>			
+			<component ref="head" />
+			<component ref="north" />
+			<component ref="top" />
+			<component ref="right-panel" />
+			<component ref="left-panel" />
+			<component>
+				<dependences visibility="public"/>
+				<resources>
+					<component ref="load-content-page" />
+				</resources>				
+			</component>
+			<component name="south" id="south" src="pages/layout/south.html" jsAfter="javascript:south_page_onload();">
+				<messages>
+					<message key="label.south" />
+				</messages>
+			</component>
+		</resources>	
+	</component>	
+
+</loader>
+

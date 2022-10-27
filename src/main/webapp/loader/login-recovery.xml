@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+
+<loader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="loader-schema.xml">
+		
+	<layout pageName="layout" />	
+	
+	<component name="layout" id="layout" src="layout/layout2.html" jsAfter="javascript:layout_page_onload();">
+		<resources>			
+			<component id="alert_message_component" src="pages/alertmessage.html" />
+			<component jsAfter="javascript:head_page_onload();">
+				<resources>
+					<component id="lang_panel" src="pages/components/lang.html" />							
+				</resources>
+			</component>		
+			<component id="north" src="pages/layout/north.html" />
+			<component id="south" src="pages/layout/south.html">
+				<messages>
+					<message key="label.south" />
+				</messages>
+			</component>			
+			<component id="content" src="pages/login_recovery.html">
+				<messages>
+					<message key="text.login.recovery" type="text" />
+					<message key="text.login.recovery.step1" type="text" />
+					<message key="text.login.recovery.step2" type="text" />
+					<message key="text.login.recovery.step3" type="text" />
+					<message key="text.login.recovery.step4" type="text" />
+					<message key="text.login.recovery.step5" type="text" />
+										
+					<message key="label.warning" id="label.warning.login.recovery" />
+					<message key="text.warning.login.recovery" type="text" />
+					<message key="label.login.recovery.title" />
+					<message key="label.field.username" />
+					
+					<message key="label.field.captcha" />
+					<message key="label.field.captcha.enter" />
+					<message key="label.button.captcha.new" />
+					
+					<message key="label.button.send.redefinition.link" />									
+				</messages>
+			</component>		
+		</resources>	
+	</component>
+	
+</loader>
+

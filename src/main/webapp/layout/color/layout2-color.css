@@ -1,0 +1,28 @@
+
+div#head_div {
+	background: #DEF;
+	border-top: 1px solid #ACF;
+	border-bottom: 1px solid #ACF;
+}
+
+div#north_div {
+	background: #f6f6ff;
+}
+
+div#center_div {	
+	background: #f6f6ff;
+}
+
+div#content_div {
+	background: #FFF;
+}
+
+div#south_div {
+	background: #DEF;
+	border-top: 1px solid #ACF;
+	border-bottom: 1px solid #ACF;
+}
+
+div#south_div .south-text {
+	
+}

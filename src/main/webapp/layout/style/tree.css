@@ -1,0 +1,33 @@
+
+.tree {
+	padding: 5px;	
+}
+
+.tree-menu-title {
+	padding: 2px 5px 0 5px;
+	font-variant: small-caps;
+}
+
+.tree-menu {
+	visibility:hidden;
+	display:none;
+	padding: 3px 0;
+}
+
+.tree-item {
+	font-size: small;
+	font-variant: small-caps;
+}
+
+.tree-submenu, .tree-item {
+	padding: 0 15px;
+}
+
+
+h4.tree-menu-title, h4.tree-item {
+	margin:0;
+}
+
+.tree-menu-title:hover, .tree-item:hover {
+	cursor: pointer;
+}

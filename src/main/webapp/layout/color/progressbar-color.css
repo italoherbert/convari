@@ -1,0 +1,16 @@
+
+.progressbar {
+	border: 1px solid #ACF;
+}
+
+.progressbar-content {
+	border: 1px solid #ACF;
+}
+
+.progressbar-content-filled {
+	background: #ACF;
+}
+
+.progressbar-label {
+	
+}

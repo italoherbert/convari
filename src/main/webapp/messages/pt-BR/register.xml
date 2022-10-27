@@ -1,0 +1,15 @@
+
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="../text-schema.xml">
+	
+	<text key="text.register">
+		Preencha o formulário a seguir e, depois de confirmado o cadastro, você poderá fazer login no sistema 
+		e ter privilégios de usuário cadastrado.	
+	</text>
+		
+	<text key="text.warning.register.mail">
+		O e-mail informado será utilizado caso precise recuperar sua senha. 
+		Por isso, é importante cadastrar um e-mail válido e acessível à você.
+	</text>
+
+</content>		

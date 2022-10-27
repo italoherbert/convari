@@ -1,0 +1,24 @@
+<div id="add_new_post_page" class="panel">
+	<div id="label.post.create.title" class="title"></div>
+	<div class="panel-content">
+		<span id="text.create.post"></span>
+		<br />
+		<p  class='attention-panel'>
+			<span id="label.warning" class='attention-msg'></span>
+			<span id="text.warning.create.post"></span>
+		</p>		
+		<form name="add_post_form">
+			<span class="label">
+				<span id="add_post_characteres_length">0</span>
+				<span id="label.remainder.characters"></span>
+			</span>			
+			<textarea class="expand" name="message"></textarea>				
+			<div class="button-panel">
+				<a id="label.button.send" class="button" onclick="javascript:post.addNewPost();"></a>				
+			</div>
+			<span class="error-msg" id="add_post_error_msg"></span>
+			<br />
+			<span class="info-msg" id="add_post_info_msg"></span>
+		</form>
+	</div>
+</div>					

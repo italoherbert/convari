@@ -1,0 +1,46 @@
+<div id="login_recovery_page">
+
+	<div id="text.login.recovery" class="subtitle"></div>
+	<ul style="list-style-type: decimal;">
+		<li id="text.login.recovery.step1"></li>
+		<li id="text.login.recovery.step2"></li>
+		<li id="text.login.recovery.step3"></li>
+		<li id="text.login.recovery.step4"></li>
+		<li id="text.login.recovery.step5"></li>
+	</ul> 		
+
+	<form name="login_recovery_form">
+				
+		<div class="panel">
+			<div id="label.login.recovery.title" class="panel-title"></div>
+			<div class="form-panel">	
+				<span id="label.field.username" class="label"></span>
+				<br />				
+				<input class="field" type="text" name="username" value="" maxlength="100" />
+				<br />
+				<span id="label.field.captcha" class="label"></span>
+				<br />
+				<img id="login_recovery_captcha_image" src="servlet/CaptchaServlet?cmd=login-recovery" />
+				<br />
+				<span id="label.button.captcha.new" class="button" onclick="javascript:loginRecovery.loadNewCaptcha()"></span>
+				<br />
+				<span id="label.field.captcha.enter" class="label"></span>
+				<br />
+				<input class="field" type="text" name="captcha" value="" />
+				<br />
+				<div class="button-panel">
+					<a id="label.button.send.redefinition.link" class="button" onclick="javascript:loginRecovery.sendPasswordRedefinitionLink();"></a>		
+				</div>
+				<span class="error-msg" id="login_recovery_error_msg"></span>
+				<span class="info-msg" id="login_recovery_info_msg"></span>
+			</div>
+		</div>
+	
+	</form>
+	
+	<p class='attention-panel'>
+		<span id="label.warning.login.recovery" class='attention-msg'></span>
+		<span id="text.warning.login.recovery"></span> 
+	</p>
+	
+</div>

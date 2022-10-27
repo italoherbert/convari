@@ -1,0 +1,29 @@
+<span id="text.create.topic"></span>
+
+<p  class='attention-panel'>
+	<span id="label.warning" class='attention-msg'></span> 
+	<span id="text.warning.create.topic"></span>
+</p>
+
+<form name="add_topic_form">
+	<span class="label">
+		<span id="add_topic_characteres_length">0</span>
+		<span id="label.remainder.characters"></span>
+	</span>
+	<textarea class="expand" name="description"></textarea>					
+	<br />
+	<div class="label">
+		<span id="label.visible.to"></span>
+		<select name="topic_visibility_cb">
+			<option id="label.visibility.owner" value=1></option>
+			<option id="label.visibility.contact" value=2></option>
+			<option id="label.visibility.user" value=3></option>
+			<option id="label.visibility.public" value=4 selected="selected"></option>																
+		</select>
+	</div>					
+	<div class="button-panel">
+		<a id="label.button.create" class="button" onclick="javascript:post.addNewTopic();"></a>					
+	</div>
+	<span class="error-msg" id="add_topic_error_msg"></span>
+	<span class="info-msg" id="add_topic_info_msg"></span>
+</form>

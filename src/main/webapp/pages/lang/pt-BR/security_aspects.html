@@ -1,0 +1,69 @@
+
+<br />
+<div class="subtitle">Criptografia de senha</div>
+<p style="padding:0 20px">
+	Para aumentar a confidencialidade da senha do usuário, o sistema tem implantado um módulo de criptografia 
+	com base em chaves assimétricas que é utilizado durante toda requisição ao servidor em que seja necessário o 
+	envio da senha do usuário. Porém, para que o módulo de criptografia funcione, é necessário que o usuário tenha instalado 
+	em seu computador a maquina virtual Java. O motívo pelo qual o módulo de criptografia foi implantado 
+	como Applet Java é a necessidade da criptografia antes do envio ao servidor, isto é, o mecanismo precisa 
+	ser executado, também, no computador cliente. A Conexão segura via SSL está prevista como funcionalidade a ser 
+	implantada no futuro para substituir ou colaborar com o módulo de criptografia atual.
+</p>
+
+<div class="subtitle">CAPTCHA</div>
+<p style="padding:0 20px">
+	Como método para diminuir as chances de quebra de senha por força bruta, consulta a dicionário de dados, 
+	...etc, o sistema tem implantado em formulários de acesso público (EX: formulários de login, registro 
+	no sistema, redefinição de senha...) um mecanismo que gera imagens automaticas e solicita que o usuário 
+	informe os digitos correspondentes ao código que a imagem representa. Esse método é conhecido como CAPTCHA.
+</p>
+
+<div class="subtitle">Redefinição de senha</div>
+<p style="padding:0 20px">
+	Outro aspecto de segurança importante do ConVari é o mecanismo de redefinição de senha. Ao esquecer a senha, 
+	o usuário poderá solicitar ao sistema um link de redefinição e, então, o sistema irá gerar um código de 
+	segurança e, em seguida, o link de redefinição será enviado para o e-mail informado pelo usuário durante 
+	seu cadastro. Após gerado o link de redefinição, o usuário terá que verificar o e-mail em sua 
+	caixa de entrada, seguir o link de redefinição gerado com base no código de segurança e, só então, 
+	poderá informar e alterar a nova senha. Por segurança o link de redefinição de senha é válido 
+	apenas por 24 horas.
+</p>	
+
+<div class="subtitle">Controle de acesso</div>
+<div style="padding:0 20px">
+	<p>
+		O sistema permite também, ao usuário, configurar o acesso a alguns dados pessoais e temas criados 
+		de acordo com grupos de usuário.
+	</p>
+	<p>
+		Veja abaixo as configurações de acesso permitidas:
+	</p>
+	
+	<ul>
+		<li><b style="text-decoration: underline;">Apenas o criador:</b>
+			<i>Nesse grupo de privilégios, o acesso é concedido apenas ao usuário dono (Ou criador);</i>
+		</li>
+		<li><b style="text-decoration: underline;">Apenas o criador e seus contatos:</b>
+			<i>O acesso é concedido apenas ao usuário dono e seus contatos;</i>
+		</li>
+		<li><b style="text-decoration: underline;">Qualquer usuário cadastrado:</b>
+			<i>Será concedido o acesso a qualquer usuário autenticado;</i>
+		</li>
+		<li><b style="text-decoration: underline;">Qualquer internalta:</b>
+			<i>
+				Qualquer um com acesso a internet poderá acessar a página correspondente 
+				ao tema, mas, apenas usuários autenticados poderão postar sobre o tema;
+			</i>
+		</li>
+	</ul>
+	
+	<p>
+		Além de controle de permissões de acordo com configurações especificadas pelo próprio usuário, 
+		o sistema também limita o acesso por regras padrões do próprio sistema, por exemplo: Várias páginas 
+		e formulários devem ter acesso concedido apenas ao usuário dono da conta e, limitados a usuários que, 
+		embora autenticados, estejam visualizando páginas correspondentes ao perfil de outro usuário.
+	</p> 
+</div>
+
+

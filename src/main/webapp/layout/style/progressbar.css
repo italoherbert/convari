@@ -1,0 +1,28 @@
+
+.progressbar {
+	position:absolute;
+	width: 202px;
+	height: 20px;
+	padding: 1px;
+}
+
+.progressbar-content {
+	width:auto;
+	height:18px;
+}
+
+.progressbar-content-filled {
+	height:18px;
+}
+
+.progressbar-label {
+	position:absolute;
+	width:202px;
+	text-align: center;
+}
+
+.progressbar-right {
+	position:relative;
+	top:3px;
+	margin-left:210px;
+}

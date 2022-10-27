@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+
+<loader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="loader-schema.xml">
+
+<component name="left-panel" id="leftpanel" src="pages/layout/leftpanel.html" jsAfter="javascript:leftpanel_page_onload();">
+	<dependences visibility="owner contact user" />
+	<resources>
+		<component ref="basic-profile" />
+		<component ref="status" />
+		<component ref="manage-invitation" />
+		<component ref="menupanel" />
+		<component id="development_panel" src="pages/components/development_panel.html">
+			<dependences visibility="owner" />
+			<messages>
+				<message key="label.dev.title" />				
+				<message key="label.link.comment" />
+			</messages>
+		</component>
+	</resources>
+</component>
+
+<component name="basic-profile" id="basic_profile" src="pages/components/basic_profile.html" jsAfter="javascript:basic_profile_page_onload();">
+	<dependences visibility="owner contact user">
+		<operation name="get-basic-user-data" />
+	</dependences>
+</component>
+
+<component name="status" id="status" src="pages/components/status.html" jsAfter="javascript:status_page_onload()">
+	<dependences visibility="owner contact user">
+		<operation name="get-status" />
+	</dependences>
+</component>
+
+<component name="manage-invitation" id="manage_invitation" src="pages/components/manage_invitation.html" jsAfter="javascript:manage_invitation_page_onload();">
+	<dependences visibility="contact user" />
+	<messages>
+		<message key="label.invitation.title" />
+	</messages>
+</component>
+
+<component name="menupanel" jsAfter="javascript:menupanel_page_onload();">
+	<dependences visibility="owner contact user" />
+	<messages>
+		<message key="label.menu.title" />
+	</messages>
+</component>
+
+</loader>
+

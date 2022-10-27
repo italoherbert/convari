@@ -1,0 +1,43 @@
+﻿
+.menu *, .menubar * {
+	position:relative;
+	padding:0;
+	margin:0;
+}
+
+.menubar {
+
+}
+
+.submenu {
+	position:absolute;
+}
+
+.menubar-content, .menu-content, .submenu-content, .menu-item-content, .menubar-item-content {
+	
+}
+
+.menu-item {
+	display:block;
+	white-space:normal;
+}
+
+.menubar-item {
+	display:inline;	
+	white-space: nowrap;
+}
+
+.menu-label, .menubar-label {
+	cursor:pointer;
+	white-space: nowrap;
+}
+
+.menu-label-option, .menu-label-notoption {
+
+}
+
+/* Versões antigas do IE */
+
+.menu-label-old-ie, .menubar-label-old-ie {
+	
+}

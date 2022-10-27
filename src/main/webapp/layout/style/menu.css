@@ -1,0 +1,18 @@
+
+.menubar-item , .menu-item {
+	text-align: left;
+	line-height: 28px;
+}
+
+.menubar-label-content {	
+	padding: 0 20px;
+}
+
+.menu-label-content {
+	padding: 0 10px;
+}
+
+.menubar-label-old-ie , .menu-label-old-ie {
+	padding: 1px 0;
+	margin:-2px 0px;
+}

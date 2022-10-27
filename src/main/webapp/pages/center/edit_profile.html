@@ -1,0 +1,185 @@
+﻿<div id="edit_profile_page">	
+	<div id="label.page.title.profile" class="title"></div>			
+
+	<span class="info-msg" id="load_profile_info_msg"></span>
+	<span class="error-msg" id="load_profile_error_msg"></span>			
+		
+	<p class='attention-panel'>
+		<span id="label.warning" class='attention-msg'></span>
+		<span id="text.warning.required.field"></span> 
+		<span class="required-simbol">*</span>.		
+	</p>
+	
+	<div style="text-align:center">
+		<a id="label.link.profile.1" href="#" onclick="javascript:componentLoader.loadComponentByName( PROFILE_PAGE );"></a>
+	</div>
+
+	<br />
+	
+	<div class="panel">
+		<div id="label.profile.panel.title.setimage" class="panel-title button" 
+				onclick="javascript:elementManager.showOrHideById( 'image_upload_form_panel' );">
+		</div>
+		<div id="image_upload_form_panel" style="visibility:hidden; display:none" class="form-panel">
+			<div id='user_image_upload_form_div'>
+				<form name="user_image_upload_form" enctype="multipart/form-data" target="user_image_upload_response">
+					<div class="field">	
+						<input id="user_image_file" type="file" name="file" value="" />
+						<input id="image_send_bt" type="submit" value="Enviar" onclick="javascript:profile.uploadUserImage();" />
+					</div>
+				</form>
+			</div>			
+			<span id="send_user_image_pb">
+				<span id="send_user_image_pb_right" style="visibility:hidden; display:none">
+					<a id="label.button.cancel" href="#" onclick="javascript:profile.cancelUploadUserImage();"></a>
+				</span>
+				<br />
+			</span>					
+			<span class="error-msg" id="load_user_image_error_msg"></span>
+			<span class="info-msg" id="load_user_image_info_msg"></span>
+			<iframe name="user_image_upload_response" style="height:0; width:0; border:none"></iframe>									
+		</div>	
+	</div>
+
+	<br />
+
+	<form name="profile_form">			
+		
+		<div class="panel">
+			<div id="label.profile.title.generaldata" class="panel-title button" 
+				onclick="javascript:elementManager.showOrHideById( 'general_data_form_panel' );">
+			</div>
+			<div id="general_data_form_panel" style="visibility:hidden; display:none" class="form-panel">
+				<span id="label.field.name" class="label"></span>
+				<br />
+				<input class="field" type="text" name="name" value="" maxlength="100" /> 
+				<span class="required-simbol">*</span>
+				
+				<br />
+				<span id="label.field.lastname" class="label"></span>
+				<br />
+				<input class="field" type="text" name="lastname" value="" maxlength="100" />
+				<span class="required-simbol">*</span>
+				
+				<br />	
+				<div class="label">
+					<span id="label.field.sex"></span>
+					<select name="sex_cb">
+						<option id="label.sex.m" value="m" selected="selected"></option>
+						<option id="label.sex.f" value="f"></option>															
+					</select>
+					<span class="required-simbol">*</span>											
+				</div>
+				
+				<span id="label.field.website" class="label"></span>
+				<br />
+				<input class="field" type="text" name="website" value="" maxlength="100" />
+																
+				<div class="button-panel">
+					<a id="label.button.save.1" class="button" onclick="javascript:profile.saveGeneralData();"></a>
+				</div>
+				
+				<span class="error-msg" id="save_general_data_error_msg"></span>
+				<span class="info-msg" id="save_general_data_info_msg"></span>
+			</div>	
+		</div>
+		
+		<br />
+		
+		<div class="panel">
+			<div id="label.profile.title.contactdata" class="panel-title button" 
+				onclick="javascript:elementManager.showOrHideById( 'contact_data_form_panel' );">
+			</div>
+			<div id="contact_data_form_panel" style="visibility:hidden; display:none" class="form-panel">
+				<span id="label.field.ender" class="label"></span>
+				<br />
+				<input class="field" type="text" name="ender" value="" maxlength="100" />				
+				
+				<br />
+				<span id="label.field.city" class="label"></span>
+				<br />
+				<input class="field" type="text" name="city" value="" maxlength="100" />				
+				
+				<br />
+				<span id="label.field.state" class="label"></span>
+				<br />
+				<input class="field" type="text" name="state" value="" maxlength="100" />				
+				
+				<br >
+				<span id="label.field.country" class="label"></span>
+				<br />
+				<input class="field" type="text" name="country" value="" maxlength="100" />								
+				
+				<br /><br />
+				<span id="label.field.tel" class="label"></span>
+				<br />
+				<input class="field" type="text" name="tel" value="" maxlength="100" />
+				
+				<span id="label.field.tel2" class="label"></span>
+				<br />
+				<input class="field" type="text" name="tel2" value="" maxlength="100" />				
+				
+				<br />
+				<span id="label.field.mail" class="label"></span>
+				<br />
+				<input class="field" type="text" name="mail" value="" maxlength="100" />
+				<span class="required-simbol">*</span>
+				
+				<br />
+				<span id="label.field.mail.confirm" class="label"></span>
+				<br />
+				<input class="field" type="text" name="confirmmail" value="" maxlength="100" />
+				<span class="required-simbol">*</span>
+												
+				<br />
+				<span id="label.field.mail2" class="label"></span>
+				<br />
+				<input class="field" type="text" name="mail2" value="" maxlength="100" />
+				
+				<br />
+				<span id="label.field.mail2.confirm" class="label"></span>
+				<br />
+				<input class="field" type="text" name="confirmmail2" value="" maxlength="100" />
+				
+				<div class="button-panel">
+					<a id="label.button.save.2" class="button" onclick="javascript:profile.saveContactData();"></a>
+				</div>
+				
+				<span class="error-msg" id="save_contact_data_error_msg"></span>
+				<span class="info-msg" id="save_contact_data_info_msg"></span>				
+			</div>
+		</div>
+		
+		<br />
+		
+		<div class="panel">
+			<div id="label.profile.title.professionaldata" class="panel-title button" 
+				onclick="javascript:elementManager.showOrHideById( 'professional_data_form_panel' );">
+			</div>
+			<div id="professional_data_form_panel" style="visibility:hidden; display:none" class="form-panel">	
+			
+				<span id="label.field.occupation" class="label"></span>
+				<br />
+				<input class="field" type="text" name="occupation" value="" maxlength="100" />
+				<br />
+				<span id="label.field.academic" class="label"></span>
+				<br />
+				<input class="field" type="text" name="academic" value="" maxlength="100" />
+				
+				<div class="button-panel">
+					<a id="label.button.save.3" class="button" onclick="javascript:profile.saveProfessionalData();"></a>
+				</div>
+				
+				<span class="error-msg" id="save_professional_data_error_msg"></span>
+				<span class="info-msg" id="save_professional_data_info_msg"></span>
+			</div>	
+		</div>		
+					
+	</form>
+	
+	<br />
+	<div style="text-align:center">
+		<a id="label.link.profile.2" href="#" onclick="javascript:componentLoader.loadComponentByName( PROFILE_PAGE );"></a>
+	</div>	
+	
+</div>					

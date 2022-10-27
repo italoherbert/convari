@@ -1,0 +1,28 @@
+
+a {
+	color:#33F;
+}
+
+a.text {
+	color:#000;
+}
+
+a:hover {
+	color: #67F;	
+}
+
+a:active {
+	color: #9AF;	
+}
+
+p a {		
+	color:#00F;
+}
+
+p a:hover {	
+	color:#00F;
+}
+
+p a:active {		
+	color:#22F;
+}

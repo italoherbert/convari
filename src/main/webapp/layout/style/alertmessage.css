@@ -1,0 +1,44 @@
+
+div#alert_message_div {
+	position: fixed;
+	left:0;
+	top:0;
+	width: 100%;
+	height : 100%;
+	visibility: hidden;
+	display: none;
+	z-index: 2;
+}
+
+div#bg_alert_message_div {
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height : 100%;
+}
+
+div#alert_message_panel {
+	position: relative;
+	margin:auto;
+}
+
+div#alert_message_panel.processing, div#alert_message_panel.message {
+	height: auto;
+	text-align: left;
+}
+
+div#alert_message_panel.processing {
+	padding: 3px 8px;
+	top: 250px;
+	width: 150px;
+	font-size: 20px;
+}
+
+div#alert_message_panel.message {
+	padding: 3px 3px;	
+	top: 150px;
+	width: 600px;
+	font-size: 18px;
+}
+
