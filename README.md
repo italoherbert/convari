@@ -1,5 +1,8 @@
-# convari
-Sistema de rede social ConVari - Conteúdo Variado
+# Sistema de rede social ConVari - Conteúdo Variado
+
+Desenvolvi um sistema de Rede Social e fórum de discussões que chamei na época de CONVARI, Conteúdo Variado. Onde, era possível registrar tópicos e configurar as permissões de acesso ao tópico para outros usuários poderem realizar postagens. Era possível definir status: ocupado, disponível, ausente. Bem como, enviar solicitações de amizade e aceitar solicitações de outros usuários. Acessar o perfil de outro usuário com permissões limitadas. 
+
+Foi criada uma solução em CAPTCHA, bem como, uma solução para recuperação de senha com link de redefinição enviado por e-mail para o usuário, conforme o email cadastrado no sistema.
 
 # Como rodar?
 
