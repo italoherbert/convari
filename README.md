@@ -1,17 +1,17 @@
 # convari
 Sistema de rede social ConVari - Conteúdo Variado
 
-#Como rodar?
+# Como rodar?
 
 Para rodar o sistema, você vai precisar do servidor de aplicação apache tomcat e do SGBD mysql server, bem como o arquivo WAR do projeto e o script para alimentação 
 do banco de dados convari com alguns dados.
 
-#Servidor de aplicação
+# Servidor de aplicação
 
 Baixe o apache tomcat versão 7 (não funciona nas versões mais recentes do tomcat porque o projeto é antigo).
 Após o download, instale o tomcat numa pasta de sua escolha (na versão binária é só descompactar o arquivo baixado).
 
-#Servidor de banco de dados
+# Servidor de banco de dados
 
 Você necessitará do servidor mysql, versão 5.x. 
 Com o mysql server instalado em sua máquina, crie um banco de dados com nome "convari", então crie um usuário com username "convari" com senha "71.@Fi4". 
